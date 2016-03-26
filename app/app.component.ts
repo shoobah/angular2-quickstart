@@ -2,7 +2,14 @@ import {Component} from 'angular2/core';
 
 @Component({
     selector: 'my-app',
-    template: '<h1>My first Angular2 app</h1>'
+    template: `<div>
+    <input type="text" #myInput>
+    <button (click)="onClick($event)">Click me</button>
+    </div>`
 })
 
-export class AppComponent{}
+export class AppComponent{
+    onClick(value){
+        console.log(value);
+    }
+}

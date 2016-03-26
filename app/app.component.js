@@ -21,10 +21,13 @@ System.register(['angular2/core'], function(exports_1, context_1) {
             AppComponent = (function () {
                 function AppComponent() {
                 }
+                AppComponent.prototype.onClick = function (value) {
+                    console.log(value);
+                };
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: '<h1>Min första Angular2 app</h1>'
+                        template: "<div>\n    <input type=\"text\" #myInput>\n    <button (click)=\"onClick($event)\">Click me</button>\n    </div>"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
