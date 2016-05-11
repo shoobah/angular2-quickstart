@@ -4,7 +4,7 @@ import {Component} from 'angular2/core';
     selector: 'my-app',
     template: `<div>
     <input type="text" #myInput>
-    <button (click)="onClick($event)">Click me</button>
+    <button (click)="onClick($event)">Click me!</button>
     </div>`
 })
 

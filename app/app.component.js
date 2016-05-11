@@ -27,7 +27,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "<div>\n    <input type=\"text\" #myInput>\n    <button (click)=\"onClick($event)\">Click me</button>\n    </div>"
+                        template: "<div>\n    <input type=\"text\" #myInput>\n    <button (click)=\"onClick($event)\">Click me!</button>\n    </div>"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
