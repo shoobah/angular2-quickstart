@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1, context_1) {
+System.register(['@angular/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -36,7 +36,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n        <h1>{{title}}</h1>\n        <h2>My Heroes</h2>\n        <ul class=\"heroes\">\n        <li *ngFor=\"let hero of heroes\">\n            <!-- each hero goes here -->\n        </li>\n        </ul>\n        <h2>{{hero.name}} details!</h2>\n        <div><label>id: </label>{{hero.id}}</div>\n        <div>\n            <label>name: </label>\n            <input [(ngModel)]=\"hero.name\" placeholder=\"name\">\n        </div>\n        "
+                        template: "\n        <h1>{{title}}</h1>\n        <h2>My Heroes</h2>\n        <ul class=\"heroes\">\n        <li *ngFor=\"let hero of heroes\">\n             <span>{{hero.name}}</span>\n        </li>\n        </ul>\n        <h2>{{hero.name}} details!</h2>\n        <div><label>id: </label>{{hero.id}}</div>\n        <div>\n            <label>name: </label>\n            <input [(ngModel)]=\"hero.name\" placeholder=\"name\">\n        </div>\n        "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

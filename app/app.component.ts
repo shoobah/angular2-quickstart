@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import { Component } from '@angular/core';
 
 export class Hero {
     id: number;
@@ -12,7 +12,7 @@ export class Hero {
         <h2>My Heroes</h2>
         <ul class="heroes">
         <li *ngFor="let hero of heroes">
-            <!-- each hero goes here -->
+             <span>{{hero.name}}</span>
         </li>
         </ul>
         <h2>{{hero.name}} details!</h2>
